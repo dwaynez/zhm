@@ -1,0 +1,53 @@
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=false
+strip_trailing_spaces=false
+replace_tabs=false
+
+[indentation]
+indent_width=4
+indent_type=0
+indent_hard_tab_width=8
+detect_indent=false
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=zhmalarm
+base_path=/home/pi/zhm
+description=
+file_patterns=
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=72
+
+[files]
+current_page=8
+FILE_NAME_0=268;Python;0;16;1;1;0;%2Fhome%2Fpi%2Fzhm%2Fsetup.py;0;4
+FILE_NAME_1=4;Cython;0;16;1;1;0;%2Fhome%2Fpi%2Fzhm%2Fzhmalarm.pyx;0;4
+FILE_NAME_2=13622;Python;0;16;1;1;0;%2Fhome%2Fpi%2Fzhm%2Fzhmservice.py;0;4
+FILE_NAME_3=64157;XML;0;16;1;1;0;%2Fhome%2Fpi%2Fzhm%2Fzhomemonitor.glade;0;4
+FILE_NAME_4=33880;Python;0;16;1;1;0;%2Fhome%2Fpi%2Fzhm%2Fzhmutils.py;0;4
+FILE_NAME_5=15842;Python;0;16;1;1;0;%2Fhome%2Fpi%2Fzhm%2Fzhomemonitor.py;0;4
+FILE_NAME_6=0;C;0;16;0;1;0;%2Fhome%2Fpi%2Fzhm%2Fzhmalarm_modules.h;0;4
+FILE_NAME_7=8002;C;0;16;0;1;0;%2Fhome%2Fpi%2Fzhm%2Fzhmalarm_modules.c;0;4
+FILE_NAME_8=6736;C;0;16;0;1;0;%2Fhome%2Fpi%2Ftestspin.c;0;4
+
+[VTE]
+last_dir=/home/pi
+
+[build-menu]
+CythonFT_00_LB=_Compile
+CythonFT_00_CM=python3 setup.py build_ext --inplace
+CythonFT_00_WD=
+filetypes=Cython;C;
+CFT_00_LB=_Compile
+CFT_00_CM=gcc -Wall -c "%f" -lpigpio
+CFT_00_WD=
+CFT_01_LB=_Build
+CFT_01_CM=gcc -Wall -o "%e" "%f" -lpigpio -lrt -lpthread 
+CFT_01_WD=
+EX_00_LB=_Execute
+EX_00_CM=sudo "./%e"
+EX_00_WD=
